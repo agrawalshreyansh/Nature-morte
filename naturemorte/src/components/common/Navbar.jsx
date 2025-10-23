@@ -20,7 +20,7 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-8">
             {pages.map((el) => {
               return (
-                <Link to={el.split(" ").at(-1).toLowerCase()}>
+                <Link key={el} to={el.split(" ").at(-1).toLowerCase()}>
                   <button className="hover:text-gray-600 transition-colors">
                     {el}
                   </button>
