@@ -1,6 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 
-export default function Landing() {
+export default function Home() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}

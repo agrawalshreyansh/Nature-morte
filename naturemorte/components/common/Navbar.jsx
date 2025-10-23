@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Navbar() {
   const pages = [
@@ -13,14 +13,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <button className="hover:opacity-70 transition-opacity">
-            <Link to="/">
+            <Link href="/">
               <span className="text-xl tracking-wide">SAAT SAATH ARTS</span>
             </Link>
           </button>
           <nav className="hidden md:flex items-center gap-8">
             {pages.map((el) => {
               return (
-                <Link key={el} to={el.split(" ").at(-1).toLowerCase()}>
+                <Link key={el} href={el.split(" ").at(-1).toLowerCase()}>
                   <button className="hover:text-gray-600 transition-colors cursor-pointer">
                     {el}
                   </button>

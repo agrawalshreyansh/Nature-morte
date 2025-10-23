@@ -1,9 +1,11 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Evolution from "../../components/park/Evoluiton";
-import Founding from "../../components/park/Founding";
-import Impact from "../../components/park/Impact";
-import Support from "../../components/park/Support";
+import Evolution from "@/components/park/Evolution.jsx";
+import Founding from "@/components/park/Founding.jsx";
+import Impact from "@/components/park/Impact.jsx";
+import Support from "@/components/park/Support.jsx";
 
 export default function Park() {
   const [activeTab, setActiveTab] = useState("founding");

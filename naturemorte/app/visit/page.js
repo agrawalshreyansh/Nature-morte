@@ -1,7 +1,7 @@
+"use client";
 import { motion } from "framer-motion";
 import { Bus, Car, MapPin, Navigation, Plane, TramFront } from "lucide-react";
 import { useState } from "react";
-import toast from "react-hot-toast";
 
 export default function Visit() {
   const locs = {
@@ -172,6 +172,10 @@ export default function Visit() {
                       <Navigation size={20} />
                     </button>
                   </div>
+                  <p className="text-sm text-gray-500 mt-2">
+                    Enter your location or click the navigation icon to detect
+                    automatically
+                  </p>
                 </div>
 
                 {/* LOCAL TRANSPORT */}
