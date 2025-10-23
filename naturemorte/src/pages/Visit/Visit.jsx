@@ -41,10 +41,6 @@ export default function Visit() {
 
   const openGoogleMapsRoute = (mode) => {
     if (!userCoords && !userLocation.trim()) {
-      toast.error("Please enter your location or use current location", {
-        id: "location-required",
-        icon: "📍",
-      });
       return;
     }
 
