@@ -21,7 +21,7 @@ export default function Navbar() {
             {pages.map((el) => {
               return (
                 <Link key={el} to={el.split(" ").at(-1).toLowerCase()}>
-                  <button className="hover:text-gray-600 transition-colors">
+                  <button className="hover:text-gray-600 transition-colors cursor-pointer">
                     {el}
                   </button>
                 </Link>
