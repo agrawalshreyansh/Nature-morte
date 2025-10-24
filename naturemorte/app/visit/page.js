@@ -262,7 +262,7 @@ export default function Visit() {
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <div
             data-slot="card"
-            className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border p-6"
+            className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 p-6"
           >
             <h4 className="text-xl mb-3">Opening Hours</h4>
             <p className="text-gray-600">
@@ -272,7 +272,7 @@ export default function Visit() {
           </div>
           <div
             data-slot="card"
-            className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border p-6"
+            className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 p-6"
           >
             <h4 className="text-xl mb-3">Best Time to Visit</h4>
             <p className="text-gray-600">
@@ -282,7 +282,7 @@ export default function Visit() {
           </div>
           <div
             data-slot="card"
-            className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border p-6"
+            className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 p-6"
           >
             <h4 className="text-xl mb-3">Entry Information</h4>
             <p className="text-gray-600">
