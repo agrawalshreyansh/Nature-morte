@@ -19,7 +19,7 @@ export default function Park() {
   };
   return (
     <section
-      id="sculpture-park"
+      id="park"
       className="pt-24 pb-20 lg:py-32 bg-gray-50 relative z-10 container mx-auto px-4"
     >
       <motion.div
@@ -34,7 +34,7 @@ export default function Park() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
             <h2 className="text-4xl lg:text-6xl mb-6">The Sculpture Park</h2>
-            <p className="text-xl text-gray-700 max-w-3xl">
+            <p className="text-xl text-gray-700 max-w-3xl font-semibold">
               A landmark public-private partnership creating unique dialogue
               between contemporary art and historic architecture in Rajasthan's
               heritage sites.

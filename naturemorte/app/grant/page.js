@@ -4,7 +4,7 @@ import { Award, Calendar, CircleCheck } from "lucide-react";
 
 export default function Grant() {
   return (
-    <section id="curatorial-grant" className="py-20 lg:py-32 bg-white">
+    <section id="grant" className="py-20 lg:py-32 bg-white">
       <motion.div
         className="container mx-auto px-4 lg:px-8"
         initial={{ opacity: 0, y: -20 }}
@@ -16,10 +16,10 @@ export default function Grant() {
       >
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <h2 className="text-4xl lg:text-6xl mb-6">
+            <h2 className="text-4xl lg:text-6xl mb-6 font-semibold">
               SSA-IAF Curatorial Research Grant
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl">
+            <p className="text-xl text-gray-700 max-w-3xl font-semibold">
               Fostering deep, long-term engagement between visionary
               international curators and India's contemporary art landscape.
             </p>
@@ -35,15 +35,15 @@ export default function Grant() {
             <div className="order-1 md:order-2">
               <div className="flex items-center gap-2 mb-4">
                 <Award size={32} />
-                <h3 className="text-3xl">About the Grant</h3>
+                <h3 className="text-3xl font-semibold">About the Grant</h3>
               </div>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 font-semibold">
                 First launched in <strong>February 2015</strong>, the Saat Saath
                 Curatorial Research Grant is a major initiative designed to
                 foster deep, long-term engagement between visionary
                 international curators and India's contemporary art landscape.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 font-semibold">
                 Conceived by <strong>Aparajita Jain</strong> and{" "}
                 <strong>Diana Campbell Betancourt</strong>, the grant provides
                 resources for bespoke research trips, offering unparalleled

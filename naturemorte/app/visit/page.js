@@ -95,7 +95,7 @@ export default function Visit() {
     "inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:ring-2 focus-visible:ring-gray-200";
 
   return (
-    <section id="navigation" className="py-20 lg:py-32 bg-white">
+    <section id="visit" className="py-20 lg:py-32 bg-white">
       <motion.div
         className="container mx-auto px-4 lg:px-8"
         initial={{ opacity: 0, y: -20 }}
@@ -107,7 +107,7 @@ export default function Visit() {
             <h2 className="text-4xl lg:text-6xl mb-6">
               Visit The Sculpture Park
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-semibold">
               Plan your journey to experience contemporary art in Rajasthan’s
               magnificent heritage sites
             </p>
@@ -171,7 +171,7 @@ export default function Visit() {
                 <div>
                   <label
                     htmlFor="location"
-                    className="text-sm font-medium mb-2 block"
+                    className="text-sm mb-2 block font-semibold"
                   >
                     Your Location
                   </label>
@@ -192,7 +192,7 @@ export default function Visit() {
                       <Navigation size={20} />
                     </button>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">
+                  <p className="text-sm text-gray-500 mt-2 font-semibold">
                     Enter your location or click the navigation icon to detect
                     automatically
                   </p>
@@ -200,7 +200,7 @@ export default function Visit() {
 
                 {/* LOCAL TRANSPORT */}
                 <div>
-                  <h4 className="mb-3 font-medium">Local Transportation</h4>
+                  <h4 className="mb-3 font-semibold">Local Transportation</h4>
                   <div className="grid grid-cols-2 gap-3">
                     <button
                       onClick={() => openGoogleMapsRoute("driving")}
@@ -264,8 +264,8 @@ export default function Visit() {
             data-slot="card"
             className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 p-6"
           >
-            <h4 className="text-xl mb-3">Opening Hours</h4>
-            <p className="text-gray-600">
+            <h4 className="text-xl mb-3 font-semibold">Opening Hours</h4>
+            <p className="text-gray-600 font-semibold">
               Visit during exhibition periods. Check current exhibition dates
               for specific timings.
             </p>
@@ -274,8 +274,8 @@ export default function Visit() {
             data-slot="card"
             className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 p-6"
           >
-            <h4 className="text-xl mb-3">Best Time to Visit</h4>
-            <p className="text-gray-600">
+            <h4 className="text-xl mb-3 font-semibold">Best Time to Visit</h4>
+            <p className="text-gray-600 font-semibold">
               October to March offers pleasant weather in Jaipur. Plan your
               visit during the annual exhibition period.
             </p>
@@ -284,8 +284,8 @@ export default function Visit() {
             data-slot="card"
             className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-200 p-6"
           >
-            <h4 className="text-xl mb-3">Entry Information</h4>
-            <p className="text-gray-600">
+            <h4 className="text-xl mb-3 font-semibold">Entry Information</h4>
+            <p className="text-gray-600 font-semibold">
               Free entry to exhibitions. Fort entry fees may apply for general
               heritage site access.
             </p>

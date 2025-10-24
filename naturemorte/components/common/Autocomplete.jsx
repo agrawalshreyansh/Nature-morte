@@ -119,7 +119,7 @@ export default function Autocomplete({
           value={value}
           onChange={handleInputChange}
           placeholder={placeholder}
-          className="w-full h-9 pl-10 pr-10 rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="w-full h-9 pl-10 pr-10 rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-gray-200 bg-gray-200"
           autoComplete="off"
         />
         {value && (
