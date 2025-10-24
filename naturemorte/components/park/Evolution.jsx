@@ -21,7 +21,7 @@ export default function Evolution() {
     >
       <div className="bg-white p-8 rounded-lg shadow-md">
         <div className="flex items-start gap-4 mb-6">
-          <MapPin size={64} />
+          <MapPin size={24} />
           <div>
             <h3 className="text-2xl mb-4">Historical Development</h3>
             <p className="text-gray-700 mb-6">

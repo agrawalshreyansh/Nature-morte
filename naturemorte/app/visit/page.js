@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Bus, Car, MapPin, Navigation, Plane, TramFront } from "lucide-react";
 import { useState } from "react";
+import Autocomplete from "@/components/common/Autocomplete";
 
 export default function Visit() {
   const locs = {
@@ -24,19 +25,37 @@ export default function Visit() {
   const [active, setActive] = useState("jaigarh");
   const [userLocation, setUserLocation] = useState("");
   const [userCoords, setUserCoords] = useState(null);
+  const [selectedPlace, setSelectedPlace] = useState(null);
 
+  async function lookup(lat, lng) {
+    const latlng = `${lat},${lng}`;
+    const res = await fetch(
+      `/api/reverse?latlng=${encodeURIComponent(latlng)}`,
+      {
+        headers: { "X-Request-Id": "your-client-id-123" }, // optional
+      }
+    );
+    if (!res.ok) throw new Error("lookup failed");
+    return res.json();
+  }
   const handleGetLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        (pos) => {
+        async (pos) => {
           const { latitude, longitude } = pos.coords;
           setUserCoords({ lat: latitude, lng: longitude });
-          setUserLocation(`${latitude}, ${longitude}`);
+          const location = await lookup(latitude, longitude);
+          setUserLocation(`${location.results[0].formatted_address}`);
         },
         () =>
           alert("Unable to get your location. Please enable location services.")
       );
     }
+  };
+
+  const handlePlaceSelect = (place) => {
+    setSelectedPlace(place);
+    // You can also get place details here if needed
   };
 
   const openGoogleMapsRoute = (mode) => {
@@ -145,7 +164,7 @@ export default function Visit() {
 
             {/* RIGHT SIDE — ROUTE OPTIONS */}
             <div className="order-1 lg:order-2">
-              <div className="bg-card flex flex-col gap-6 rounded-xl border p-6 lg:p-8">
+              <div className="bg-card flex flex-col gap-6 rounded-xl border border-gray-200 p-6 lg:p-8">
                 <h3 className="text-2xl mb-6">Get Directions</h3>
 
                 {/* USER LOCATION INPUT */}
@@ -157,12 +176,13 @@ export default function Visit() {
                     Your Location
                   </label>
                   <div className="flex gap-2">
-                    <input
-                      id="location"
-                      placeholder="Enter city, address or coordinates"
+                    <Autocomplete
                       value={userLocation}
-                      onChange={(e) => setUserLocation(e.target.value)}
-                      className="flex-1 h-9 rounded-md border border-gray-300 px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-gray-200"
+                      onChange={setUserLocation}
+                      onSelect={handlePlaceSelect}
+                      placeholder="Enter city, address or coordinates"
+                      className="flex-1"
+                      userCoords={userCoords}
                     />
                     <button
                       onClick={handleGetLocation}
@@ -200,7 +220,7 @@ export default function Visit() {
                 </div>
 
                 {/* LONG DISTANCE */}
-                <div className="border-t pt-4">
+                <div className="border-t border-gray-200 pt-4">
                   <h4 className="mb-3 font-medium">Long Distance Travel</h4>
                   {[
                     {

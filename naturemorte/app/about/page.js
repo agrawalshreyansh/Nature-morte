@@ -17,7 +17,9 @@ export default function About() {
       >
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <h2 className="text-4xl lg:text-6xl mb-8">About the Foundation</h2>
+            <h2 className="text-4xl lg:text-6xl mb-8 font-semibold">
+              About the Foundation
+            </h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg mb-6">

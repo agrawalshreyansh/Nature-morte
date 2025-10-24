@@ -59,11 +59,11 @@ export default function Grant() {
             <div className="mb-6">
               <span
                 data-slot="badge"
-                className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&amp;&gt;svg]:size-3 gap-1 [&amp;&gt;svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground [a&amp;]:hover:bg-secondary/90 mb-4"
+                className="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0  gap-1  focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground mb-4 bg-white text-black"
               >
                 Partnership with India Art Fair
               </span>
-              <p className="text-lg text-white/90 mb-4">
+              <p className="text-lg text-white mb-4">
                 In an exciting new chapter, Saat Saath Arts has partnered with
                 the India Art Fair (IAF) for the 2025-2026 grant.
               </p>
@@ -103,35 +103,39 @@ export default function Grant() {
             </p>
           </div>
           <div className="mb-16">
-            <h3 className="text-3xl mb-8">Distinguished Jury 2025-2026</h3>
+            <h3 className="text-3xl mb-8 font-semibold">
+              Distinguished Jury 2025-2026
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-xl mb-2">Kamini Sawhney</h4>
+                <h4 className="text-xl mb-2 text-black font-semibold">
+                  Kamini Sawhney
+                </h4>
                 <p className="text-gray-600">
                   Independent Curator; Head, Public Arts Projects, BlrHubba
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-xl mb-2">Sandhini Poddar</h4>
+                <h4 className="text-xl mb-2 font-semibold">Sandhini Poddar</h4>
                 <p className="text-gray-600">
                   Independent Curator &amp; Art Historian; Adjunct
                   Curator-at-Large, Guggenheim, Abu Dhabi
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-xl mb-2">Dhyandra Lawson</h4>
+                <h4 className="text-xl mb-2 font-semibold">Dhyandra Lawson</h4>
                 <p className="text-gray-600">
                   Andy Song Associate Curator, Contemporary Art, LACMA
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-xl mb-2">Nawar Al Qassimi</h4>
+                <h4 className="text-xl mb-2 font-semibold">Nawar Al Qassimi</h4>
                 <p className="text-gray-600">
                   Vice President, Sharjah Art Foundation
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-xl mb-2">Jitish Kallat</h4>
+                <h4 className="text-xl mb-2 font-semibold">Jitish Kallat</h4>
                 <p className="text-gray-600">
                   Contemporary Artist; Curator, Kochi-Muziris Biennale
                 </p>
@@ -139,54 +143,58 @@ export default function Grant() {
             </div>
           </div>
           <div>
-            <h3 className="text-3xl mb-8">Past Winners (2015-2022)</h3>
+            <h3 className="text-3xl mb-8 font-semibold">
+              Past Winners (2015-2022)
+            </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2015</p>
-                <h4 className="text-lg mb-2">Catherine David</h4>
+                <p className="text-3xl mb-3 font-semibold">2015</p>
+                <h4 className="text-lg mb-2 font-semibold">Catherine David</h4>
                 <p className="text-sm text-gray-600">
                   Deputy Director, Centre Pompidou, Paris
                 </p>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2016</p>
-                <h4 className="text-lg mb-2">Lauren Cornell</h4>
+                <p className="text-3xl mb-3 font-semibold">2016</p>
+                <h4 className="text-lg mb-2 font-semibold">Lauren Cornell</h4>
                 <p className="text-sm text-gray-600">
                   Curator, New Museum, New York
                 </p>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2017</p>
-                <h4 className="text-lg mb-2">Rachel Kent</h4>
+                <p className="text-3xl mb-3 font-semibold">2017</p>
+                <h4 className="text-lg mb-2 font-semibold">Rachel Kent</h4>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2018</p>
-                <h4 className="text-lg mb-2">Dieter Roelstraete</h4>
+                <p className="text-3xl mb-3 font-semibold">2018</p>
+                <h4 className="text-lg mb-2 font-semibold">
+                  Dieter Roelstraete
+                </h4>
                 <p className="text-sm text-gray-600">
                   Member of dOCUMENTA14 team
                 </p>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2019</p>
+                <p className="text-3xl mb-3 font-semibold">2019</p>
                 <h4 className="text-lg mb-2">Helen Pheby</h4>
                 <p className="text-sm text-gray-600">
                   Senior Curator, Yorkshire Sculpture Park
                 </p>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2020</p>
-                <h4 className="text-lg mb-2">Laura Raicovich</h4>
+                <p className="text-3xl mb-3 font-semibold">2020</p>
+                <h4 className="text-lg mb-2 font-semibold">Laura Raicovich</h4>
                 <p className="text-sm text-gray-600">
                   Director of Global Initiatives, Creative Time, NY
                 </p>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2021</p>
-                <h4 className="text-lg mb-2">Diana Freundl</h4>
+                <p className="text-3xl mb-3 font-semibold">2021</p>
+                <h4 className="text-lg mb-2 font-semibold">Diana Freundl</h4>
               </div>
               <div className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-lg transition-shadow">
-                <p className="text-3xl mb-3">2022</p>
-                <h4 className="text-lg mb-2">Nora Lawrence</h4>
+                <p className="text-3xl mb-3 font-semibold">2022</p>
+                <h4 className="text-lg mb-2 font-semibold">Nora Lawrence</h4>
               </div>
             </div>
           </div>

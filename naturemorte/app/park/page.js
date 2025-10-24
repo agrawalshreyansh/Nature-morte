@@ -60,7 +60,7 @@ export default function Park() {
               role="tablist"
               aria-orientation="horizontal"
               data-slot="tabs-list"
-              className="bg-muted text-muted-foreground h-9 items-center justify-center rounded-xl p-[3px] grid w-full grid-cols-2 md:grid-cols-4 mb-8"
+              className="bg-muted text-muted-foreground h-9 items-center justify-center rounded-xl p-[3px] grid w-full grid-cols-2 md:grid-cols-4 mb-8 bg-gray-100"
               tabIndex={0}
               data-orientation="horizontal"
               style={{ outline: "none" }}
@@ -73,11 +73,11 @@ export default function Park() {
                   aria-selected={activeTab === tab}
                   data-state={activeTab === tab ? "active" : "inactive"}
                   onClick={() => setActiveTab(tab)}
-                  className={`inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-xl border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow,background-color]
+                  className={`cursor-pointer inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-xl border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow,background-color]
                     ${
                       activeTab === tab
                         ? "bg-white text-black shadow-sm"
-                        : "text-gray-600 hover:bg-gray-100"
+                        : "text-black hover:bg-gray-100"
                     }`}
                 >
                   {tab.charAt(0).toUpperCase() + tab.slice(1)}

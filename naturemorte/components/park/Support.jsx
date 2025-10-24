@@ -21,7 +21,7 @@ export default function Support() {
     >
       <div className="bg-white p-8 rounded-lg shadow-md">
         <div className="flex items-start gap-4 mb-6">
-          <Building size={64} />
+          <Building size={24} />
           <div>
             <h3 className="text-2xl mb-4">Support and Funding</h3>
             <p className="text-gray-700 mb-6">

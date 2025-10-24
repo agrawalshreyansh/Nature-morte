@@ -20,7 +20,7 @@ export default function Impact() {
     >
       <div className="bg-white p-8 rounded-lg shadow-md">
         <div className="flex items-start gap-4">
-          <Users size={128} />
+          <Users size={48} />
           <div>
             <h3 className="text-2xl mb-4">Contemporary Impact</h3>
             <p className="text-gray-700 mb-4">
